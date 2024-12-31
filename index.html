@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-info div {
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #666;
+        }
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            display: inline;
+        }
+        .navbar li a {
+            display: block;
+            text-decoration: none;
+            padding: 10px 15px;
+            color: #333;
+        }
+        .navbar li a:hover {
+            font-weight: bold;
+            color: #007BFF;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        section {
+            margin: 50px 20px;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .skill img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .home-icon img {
+            width: 30px;
+            height: 30px;
+        }
+        .recommendation {
+            margin-top: 10px;
+        }
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="contact-info">
+            <div class="name">Lawrence C</div>
+            <div class="phone">Phone: (123) 456-7890</div>
+            <div class="email">Email: yourname@example.com</div>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/5a/Dr._Bunsen_Honeydew.jpg" alt="Profile Image" class="profile-image">
+        <h1>Welcome!  I'm Lawrence</h1>
+        <p>I spent the past few months doing adeep dive into data sceince, focusing upon analytics and machine learning.  My goal is to learn and develop a better understanding of the tools available to analyze and visualize data.  And just maybe, I could integrate them into my work flow...or at least competently exlain what I want to someone who could build the necessary tools!</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="skill">
+            <img src="logo1.png" alt="Skill Logo 1">
+            <p>Skill Name 1</p>
+        </div>
+        <div class="skill">
+            <img src="logo2.png" alt="Skill Logo 2">
+            <p>Skill Name 2</p>
+        </div>
+        <div class="skill">
+            <img src="logo3.png" alt="Skill Logo 3">
+            <p>Skill Name 3</p>
+        </div>
+        <div class="skill">
+            <img src="logo4.png" alt="Skill Logo 4">
+            <p>Skill Name 4</p>
+        </div>
+        <div class="skill">
+            <img src="logo5.png" alt="Skill Logo 5">
+            <p>Skill Name 5</p>
+        </div>
+        <div class="skill">
+            <img src="logo6.png" alt="Skill Logo 6">
+            <p>Skill Name 6</p>
+        </div>
+        <div class="skill">
+            <img src="logo7.png" alt="Skill Logo 7">
+            <p>Skill Name 7</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="project">
+            <h2>Project Title</h2>
+            <p>Project description...</p>
+        </div>
+        <!-- Repeat for other projects -->
+    </section>
+
+    <section id="recommendations">
+        <div class="recommendation">
+            <p>"Great job!" - John Doe</p>
+        </div>
+        <!-- Repeat for other recommendations -->
+    </section>
+
+    <form id="recommendationForm">
+        <input type="text" id="recText" placeholder="Enter recommendation" required>
+        <input type="text" id="recName" placeholder="Your name" required>
+        <button type="submit">Submit Recommendation</button>
+    </form>
+
+    <a href="#home" class="home-icon">
+        <img src="home_icon.png" alt="Home Icon">
+    </a>
+
+    <script>
+        document.getElementById('recommendationForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent the form from submitting the traditional way
+            let recText = document.getElementById('recText').value;
+            let recName = document.getElementById('recName').value;
+
+            addRecommendation(recText, recName);
+
+            alert('Your recommendation has been submitted!'); // Task 9: Pop-up Confirmation
+
+            // Clear form fields
+            document.getElementById('recText').value = '';
+            document.getElementById('recName').value = '';
+        });
+
+        function addRecommendation(text, name) {
+            const newRec = document.createElement('div');
+            newRec.className = 'recommendation';
+            newRec.innerHTML = `<p>"${text}" - ${name}</p>`;
+            document.getElementById('recommendations').appendChild(newRec);
+        }
+    </script>
+</body>
+</html>
