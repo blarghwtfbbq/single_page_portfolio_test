@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lawrence - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home" style="color: white">
+        <div class="profile_name">
+          Lawrence
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+            myname@example.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +10123456789
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#about-me">Skills</a>
+          <a class="topmenu" href="#about-me">Projects</a>
+          <a class="topmenu" href="#about-me">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/profile.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+           Hi, I'm Lawrence. <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            Welcome to my website!
+            I spent the past few months doing a deep dive into data science, focusing upon analytics and machine learning.
+            My goal is to learn and develop a better understanding of the tools available to analyze and visualize data.
+            In the meantime, I am gaining more experience in applicaton and presentation layers.
+            And just maybe, I could integrate them into my workflow...or at least competently explain what I want to someone who could build the necessary tools!
+            
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills" class="container">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/java.png"/>
+          <h6>Java</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h6>CSS</h6>
+            <p>1 year experience</p>
+          </div>  
+          
+          <div class="skill">
+            <img src="html_finalprojimages/Python.png"/>
+            <h6>Python</h6>
+            <p>2 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="html_finalprojimages/R.jpg"/>
+            <h6>R</h6>
+            <p>2 years experience</p>
+          </div>
+
+          <div class="skill">
+            <img src="html_finalprojimages/Cognos.jpg"/>
+            <h6>IBM Cognos</h6>
+            <p>1 year experience</p>
+          </div>
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Chatbot</h3>
+            <ul>
+              <li>Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript and IBM Watson Assistant</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Sentiment Analyzer</h3>
+            <ul>
+              <li>Developed and deployed a sentiment analyzer for the box reviews section of an eCommerce platform using IBM NLU</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Fashion Website</h3>
+            <ul>
+              <li>Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart, using stripe for payment gateway</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Lawrence was an absolute pleasure to work with. His deep dive into data science and machine learning truly impressed me. 
+          He has a unique ability to analyze complex datasets and derive insightful conclusions. 
+          I highly recommend Lawrence for any analytical or data-driven role.
+          - John Smith, Senior Data Analyst
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I have worked with Lawrence on multiple projects, and his dedication and expertise are unparalleled.
+          His understanding of data visualization tools and techniques has significantly enhanced our team's performance.
+          Lawrence's ability to integrate new tools into our workflow is commendable.
+          He is a valuable asset to any team.
+          - Emily Johnson, Project Manager
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Lawrence's approach to learning and applying machine learning algorithms is both innovative and effective.
+          He has a knack for explaining complex concepts in a way that is easy to understand.
+          His enthusiasm for data science is contagious, and he has inspired many of his colleagues to delve deeper into the field.
+          - Michael Lee, Data Scientist
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
