@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alphonse - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home" style="color: white">
+        <div class="profile_name">
+          Lawrence
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+            myname@example.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +10123456789
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#project-card">Projects</a>
+          <a class="topmenu" href="#recommendation">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/profile.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+           Hi, I'm Alphonse. <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            Welcome to my website!
+            I spent the past 2 years doing a deep dive into data science, focusing upon analytics and machine learning.
+            My goal is to learn and develop a better understanding of the tools available to analyze and visualize data.
+            In the meantime, I am gaining more experience in applicaton and presentation layers.
+            And just maybe, I could integrate them into my workflow...or at least competently explain what I want to someone who could build the necessary tools!
+            
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills" class="container">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/java.png"/>
+          <h6>Java</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h6>CSS</h6>
+            <p>1 year experience</p>
+          </div>  
+          
+          <div class="skill">
+            <img src="html_finalprojimages/Python.png"/>
+            <h6>Python</h6>
+            <p>2 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="html_finalprojimages/R.jpg"/>
+            <h6>R</h6>
+            <p>2 years experience</p>
+          </div>
+
+          <div class="skill">
+            <img src="html_finalprojimages/Cognos.jpg"/>
+            <h6>IBM Cognos</h6>
+            <p>1 year experience</p>
+          </div>
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Global IT Forecast Analysis</h3>
+            <ul>
+              <li>Goal: To analyze and forecast IT spending trends globally, focusing on emerging technologies and market segments.</li>
+              <li>Description: The project involves collecting data from various sources, including industry reports and market research firms.
+                  Focused upon identifying key segments such as cloud computing, cybersecurity, and artificial intelligence.</li>
+              <li>Methods: Using Python and Pandas, the data is cleaned and preprocessed.
+                  Time series analysis techniques, including ARIMA and Prophet, were applied to model and forecast IT spending.
+                  The results were visualized using Tableau to create interactive dashboards that provide insights into spending trends and growth opportunities.</li>           
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Worldwide Bike Rental Systems Demand Prediction</h3>
+            <ul>
+              <li>Goal: To predict the demand for bike rental systems in major cities worldwide, optimizing inventory and operational efficiency.</li>
+              <li>Description: The dataset includes historical rental data, weather conditions, and socio-economic factors.
+                  The final model helps bike rental companies optimize their inventory, allocate bikes efficiently, and reduce operational costs.
+                  The insights are presented in a comprehensive report and an interactive web application.</li>
+              <li>Methods: Using R, the data is analyzed to identify patterns and correlations. Machine learning models, such as linear regression and random forests, were employed to create predictive models.
+                  Geospatial analysis was used to visualize demand patterns across different regions.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Auto Pricing Analysis</h3>
+            <ul>
+              <li>Goal: To predict the prices of used cars based on various features such as make, model, year, mileage, and condition.</li>
+              <li>Description: building a predictive model to estimate the prices of used cars. 
+                  The dataset includes details about car specifications, historical prices, and market trends.
+                  The project helps sales representatives and customers make informed decisions about car pricing.</li>             
+              <li>Methods: Using Python and Pandas, the data is cleaned and preprocessed. 
+                  Exploratory Data Analysis (EDA) is conducted to understand the key factors influencing car prices. 
+                  Multiple machine learning models, including linear regression, decision trees, and random forests, are trained and evaluated to find the best-performing model.
+                  The final model is deployed using Streamlit, creating an interactive application where users can input car details and receive instant price predictions.</li>
+            </ul>
+            <hr>
+          <div class="project-card">
+            <h3>Telecom Churn Data Analysis</h3>
+            <ul>
+              <li>Goal: To predict customer churn in a telecommunications company and identify key factors contributing to customer attrition.</li>
+              <li>Description: analyzing historical customer data to predict which customers are likely to churn. 
+                  The dataset includes customer demographics, service usage patterns, contract details, and billing information.
+                  The project helps the company implement targeted retention strategies to reduce churn and improve customer satisfaction.</li>
+              <li>Methods: Using Python and Pandas, the data is cleaned and preprocessed. 
+                  Exploratory Data Analysis (EDA) is conducted to identify patterns and correlations. 
+                  Machine learning models such as logistic regression, decision trees, and random forests are trained to predict churn. 
+                  The results are visualized using Matplotlib and Seaborn, and an interactive dashboard is created in Power BI to present insights to stakeholders.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Lawrence was an absolute pleasure to work with. 
+          His deep dive into data science and machine learning truly impressed me. 
+          He has a unique ability to analyze complex datasets and derive insightful conclusions. 
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I worked with Lawrence on multiple projects, and his dedication and expertise are unparalleled.
+          His understanding of data visualization tools and techniques significantly enhanced our team's performance.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Lawrence's approach to learning and applying machine learning algorithms is both innovative and effective.
+          He has a knack for explaining complex concepts in a way that is easy to understand.
+          His enthusiasm for data science is contagious.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+            <span>&#8220;</span>
+            Lawrence's ability to dive deep into data and extract meaningful insights is remarkable.
+            He demonstrated a strong analytical mindset and a knack for solving complex problems.
+            His work on predicting customer churn had a significant impact on our retention strategy.
+            <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+            <span>&#8220;</span>
+            Lawrence's expertise in machine learning and data analysis is outstanding.
+            He consistently delivers high-quality work and is always eager to share his knowledge with the team.
+            His contributions to our auto pricing analysis project were invaluable.
+            <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
